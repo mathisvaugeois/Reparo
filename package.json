@@ -1,0 +1,23 @@
+{
+  "name": "reparo",
+  "version": "1.0.0",
+  "description": "projet web 5A",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathisvaugeois/Reparo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathisvaugeois/Reparo/issues"
+  },
+  "homepage": "https://github.com/mathisvaugeois/Reparo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
