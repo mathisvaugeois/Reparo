@@ -101,6 +101,7 @@
 .carte{
 position: relative;
 left: 100%;
+z-index: -1;
 -webkit-transform: translateX(-50%);
 -ms-transform: translateX(-50%);
 transform: translateX(-50%);
