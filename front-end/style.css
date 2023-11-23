@@ -1,7 +1,4 @@
-#PageCentrale {
-    margin-left: auto;
-    margin-right: auto;
-   }
+
    /********************************************************/
    #BandeMenuHaut {
     display: block;
@@ -10,14 +7,14 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 55px;
-    /* z-index: 999;*/
+    height: 100px;
+     z-index: 999;
     padding-top: 10px;  /*décalage du texte vers le bas*/
     text-align: center;
     text-indent: 0px; /*décalage du texte vers la droite*/
     font-size: 18px;
     color: #FFFFFF;
-    background-color: #111;
+    background-color: #172554;
    }
    
      /*.ParamOpaciteMenu{
@@ -48,7 +45,7 @@
    {
    text-decoration: none;
    color: #ffffff;
-   background-color: #111;
+   background-color: #172554;
    }
    
    #MenuRubriques a:hover
@@ -56,7 +53,14 @@
    text-decoration: none;
    color: #fffcff;
    background-color: #1E5388;
+   border-radius: 10px;
+   border: 4px double #cccccc;
+   -webkit-transform: scaleY(1);
+   transform: scaleY(1);
+   transition-timing-function: ease, ease;
    }
+
+  
 
    a {
     color: #369;
@@ -88,9 +92,10 @@
 
 ._31AQE{
   cursor: pointer;
-  fill: green;
-  stroke: greenyellow;
+  fill: #1da5e4;
+  stroke: #172554;
   -webkit-transition: fill .3s;
+
   transition: fill .3s
 }
 
@@ -101,8 +106,30 @@
 .carte{
 position: relative;
 left: 100%;
-z-index: -1;
 -webkit-transform: translateX(-50%);
 -ms-transform: translateX(-50%);
 transform: translateX(-50%);
+}
+
+#Website_name{
+text-decoration: dashed;
+font-size:larger ;
+}
+
+
+#box {
+  margin-top: 10%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#colonne_carte{
+  width: 400px;
+}
+div {
+  float: left;
+  height: 470px;
+  width: 23%;
+  padding: 0 10px;
 }
