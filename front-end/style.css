@@ -116,20 +116,15 @@ text-decoration: dashed;
 font-size:larger ;
 }
 
-
 #box {
   margin-top: 10%;
   content: "";
   display: table;
   clear: both;
 }
-
-#colonne_carte{
-  width: 400px;
-}
 div {
   float: left;
-  height: 470px;
-  width: 23%;
+  height: 50%;
+  width: 50%;
   padding: 0 10px;
 }
