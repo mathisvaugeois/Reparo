@@ -1,4 +1,4 @@
-import NavbarStyles from '../styles/components/navar.module.css'
+import NavbarStyles from '../styles/components/navbar.module.css'
 
 export default function Navbar(){
     return(

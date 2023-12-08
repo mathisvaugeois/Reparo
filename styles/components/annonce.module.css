@@ -1,0 +1,58 @@
+.roundedRectangle {
+    width: 600px; /* Ajustez la largeur selon vos besoins */
+    height: 100px; /* Ajustez la hauteur selon vos besoins */
+    border-radius: 10px; /* Ajustez le rayon de bordure pour arrondir les coins */
+    background-color: #1da5e4; /* Couleur de fond du rectangle */
+    border: 2px solid #172554;
+    opacity: 0.9;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: left;
+  }
+
+  .imageCarre {
+    width: 94px; /* Ajustez la largeur selon vos besoins */
+    height: 94px; /* Ajustez la hauteur selon vos besoins */
+    border-radius: 10px; /* Ajustez le rayon de bordure pour arrondir les coins */
+    margin-left: 2px;
+    margin-top: 1.5px;
+    background-color: lightcoral; /* Couleur de fond du rectangle */
+    opacity: 0.8;
+    border: 2px solid rgb(236, 111, 111);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  .titreAnnonce {
+    margin-left: 10px;
+    margin-top : 1.5px;
+    text-align: left;
+    font-size: 17px;
+  }
+
+  .description {
+    margin-left: 10px;
+    margin-top : 1.5px;
+    text-align: left;
+    font-size: 16px;
+
+  }
+
+  .autre {
+    margin-left: 10px;
+    margin-top : 1.5px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  /*lightcoral
+  fill: #1da5e4;
+    stroke: #172554;
+    
+    
+    
+    
+    
+    
+    */
