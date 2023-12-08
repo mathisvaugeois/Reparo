@@ -1,13 +1,34 @@
-# Reparo (titre non définitif)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-On dépose des objets qu'on veux réparer avec le prix qu'on peut mettre pour le réparer et des personnes aptent à réparer se positionne sur les offres
+## Getting Started
 
-## Authors
+First, run the development server:
 
-- Mathis Vaugeois
-- Eli Destombes
-- Oriane Forestier
-- Enzo Pierre
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-http://web.archive.org/web/20190512035708/https://www.leboncoin.fr/annonces/offres/nord_pas_de_calais/
+Sur nouveau pc :
+configuration : npm install
+installation Next : npm install next@latest react@latest react-dom@latest
+Si erreur, possible que ce soit la version de Node, aller installer : https://nodejs.org/en/download/current
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

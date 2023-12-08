@@ -1,0 +1,15 @@
+import NavbarStyles from '../styles/components/navar.module.css'
+
+export default function Navbar(){
+    return(
+      <nav className={NavbarStyles.PageCentrale}>
+        <div className={NavbarStyles.BandeMenuHaut} /*"ParamOpaciteMenu"*/>
+          <ul className={NavbarStyles.MenuRubriques}>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">À propos de nous</a></li>
+          </ul>
+        </div>
+      </nav>
+    )
+}

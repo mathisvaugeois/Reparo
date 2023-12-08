@@ -1,0 +1,68 @@
+  .trackable {
+    color: #369;
+    -webkit-transition: all,.3s;
+    transition-duration: 0s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: all, all;
+    transition: all,.3s;
+    transition-duration: 0s, 0.3s;
+    transition-timing-function: cubic-bezier(0.39, 0.04, 0.3, 0.93), ease;
+    transition-delay: 0s, 0s;
+    transition-property: all, all;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /*background-repeat-x: initial;
+    background-repeat-y: initial;*/
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+  }
+  
+  ._31AQE{
+    cursor: pointer;
+    fill: #1da5e4;
+    stroke: #172554;
+    -webkit-transition: fill .3s;
+  
+    transition: fill .3s
+  }
+  
+  ._31AQE:hover path {
+    fill: lightcoral
+  }
+  
+  .carte{
+  position: relative;
+  left: 100%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  }
+  
+  .Website_name{
+  text-decoration: dashed;
+  font-size:larger ;
+  }
+  
+  .box {
+    margin-top: 10%;
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* à modifier */
+  .box div {
+    float: left;
+    height: 50%;
+    width: 50%;
+    padding: 0 10px;
+  }
