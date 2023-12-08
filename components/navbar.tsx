@@ -6,7 +6,7 @@ export default function Navbar(){
         <div className={NavbarStyles.BandeMenuHaut} /*"ParamOpaciteMenu"*/>
           <ul className={NavbarStyles.MenuRubriques}>
             <li><a href="page">Accueil</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="annonce/123">Annonce</a></li>
             <li><a href="#">À propos de nous</a></li>
           </ul>
         </div>
