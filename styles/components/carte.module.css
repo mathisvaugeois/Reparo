@@ -40,29 +40,41 @@
   }
   
   .carte{
-  position: relative;
-  left: 100%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  position: absolute;
+  right:  0%;
+
   }
   
   .Website_name{
   text-decoration: dashed;
   font-size:larger ;
   }
-  
-  .box {
-    margin-top: 10%;
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+
   /* à modifier */
-  .box div {
-    float: left;
-    height: 50%;
-    width: 50%;
-    padding: 0 10px;
+.container div {
+  margin: 10px;
+  padding: 10px;
   }
+.container {
+    display: flex;
+    
+}
+
+
+.list_carte {
+  margin: 10;
+  padding: 10;
+  list-style: decimal; /* Supprime les puces de la liste */
+}
+
+.list_container,
+.svg_container {
+    padding: 10px;
+}
+
+.svg_container   {
+    flex: 1; /* Permet à cette div de prendre tout l'espace disponible */
+    box-sizing: border-box ;
+    width: 80%;
+}
+
