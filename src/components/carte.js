@@ -1,11 +1,9 @@
 import CarteStyle from '../styles/components/carte.module.css'
 
-
 export default function Carte(){
     return(
 
       <div className={`${CarteStyle.container}`}>
-
         <div className={`${CarteStyle.list_container}`}>
           <ul className={`${CarteStyle.list_carte}`}>
             <li>Auvergne-Rhône-Alpes</li>
