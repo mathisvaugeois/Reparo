@@ -62,9 +62,12 @@
 
 
 .carte_list_carte__9XZhs {
-  margin: 10;
-  padding: 10;
-  list-style: decimal; /* Supprime les puces de la liste */
+  margin-top: 100px;
+  margin-left: 250px;
+  padding: 10px;
+  list-style: disc; /* Supprime les puces de la liste */
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .carte_list_container__sbfi_,
@@ -73,9 +76,15 @@
 }
 
 .carte_svg_container__yHHrr   {
-    flex: 1; /* Permet à cette div de prendre tout l'espace disponible */
+    /*flex: 1; /* Permet à cette div de prendre tout l'espace disponible */
     box-sizing: border-box ;
     width: 80%;
+    height: 400px;
+
 }
+.carte_under_carte_texte__c22RG{
+  font-size: medium;
+}
+
 
 

@@ -62,9 +62,12 @@
 
 
 .list_carte {
-  margin: 10;
-  padding: 10;
-  list-style: decimal; /* Supprime les puces de la liste */
+  margin-top: 100px;
+  margin-left: 250px;
+  padding: 10px;
+  list-style: disc; /* Supprime les puces de la liste */
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .list_container,
@@ -73,8 +76,14 @@
 }
 
 .svg_container   {
-    flex: 1; /* Permet à cette div de prendre tout l'espace disponible */
+    /*flex: 1; /* Permet à cette div de prendre tout l'espace disponible */
     box-sizing: border-box ;
     width: 80%;
+    height: 400px;
+
 }
+.under_carte_texte{
+  font-size: medium;
+}
+
 

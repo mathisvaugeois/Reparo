@@ -3,27 +3,9 @@ import CarteStyle from '../styles/components/carte.module.css'
 export default function Carte(){
     return(
 
-      <div className={`${CarteStyle.container}`}>
-        <div className={`${CarteStyle.list_container}`}>
-          <ul className={`${CarteStyle.list_carte}`}>
-            <li>Auvergne-Rhône-Alpes</li>
-            <li>Bourgogne-Franche-Comté</li>
-            <li>Bretage</li>
-            <li>Centre-Val de Loire</li>
-            <li>Corse</li>
-            <li>Grand Est</li>
-            <li>Haut-de-France</li>
-            <li>Île-de-France</li>
-            <li>Normandie</li>
-            <li>Nouvelle-Aquitaine</li>
-            <li>Occitanie</li>
-            <li>Pays de la Loire</li>
-            <li>Provence-Alpes-Côte d'Azur</li>
-          </ul>
-        </div>
-        
-        <div  className={`${CarteStyle.svg_container} ${CarteStyle.carte}`}>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1280 1400" enableBackground="new 0 0 1280 1400" xmlSpace="preserve" style={{marginLeft:300}}>
+    <div className={`${CarteStyle.container}`}>
+         <div  className={`${CarteStyle.svg_container} ${CarteStyle.carte}`}>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="800" height="800" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 0 0" xmlSpace="preserve" style={{marginLeft:400}}>
               <g><a title="Alsace" className={CarteStyle.trackable} href="" >
                 <g id="alsace" className={CarteStyle._31AQE} >
                   <path d="M540.3,215.4c4.4-4.6,13.2-22.6,13.4-27.6c0.4-8-11-10.8-7.6-15.4
@@ -478,7 +460,27 @@ export default function Carte(){
             </svg>
         </div>
 
-       
+        <div className={`${CarteStyle.list_container}`}>
+          <ul className={`${CarteStyle.list_carte}`}>
+            <li>Auvergne-Rhône-Alpes</li>
+            <li>Bourgogne-Franche-Comté</li>
+            <li>Bretage</li>
+            <li>Centre-Val de Loire</li>
+            <li>Corse</li>
+            <li>Grand Est</li>
+            <li>Haut-de-France</li>
+            <li>Île-de-France</li>
+            <li>Normandie</li>
+            <li>Nouvelle-Aquitaine</li>
+            <li>Occitanie</li>
+            <li>Pays de la Loire</li>
+            <li>Provence-Alpes-Côte d'Azur</li>
+            
+          </ul>
+        </div>
+    </div>,
+    <div className={`${CarteStyle.under_carte_texte}`}>
+    test de ou ce place le texte 
     </div>
     )
 }
