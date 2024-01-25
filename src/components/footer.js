@@ -1,0 +1,1 @@
+import footerStyle from '../styles/components/footer.module.css'
