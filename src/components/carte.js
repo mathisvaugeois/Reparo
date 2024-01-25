@@ -4,7 +4,7 @@ export default function Carte(){
     return(
 
     <div className={`${CarteStyle.container}`}>
-         <div  className={`${CarteStyle.svg_container} ${CarteStyle.carte}`}>
+        <div  className={`${CarteStyle.svg_container} ${CarteStyle.carte}`}>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="800" height="800" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 0 0" xmlSpace="preserve" style={{marginLeft:400}}>
               <g><a title="Alsace" className={CarteStyle.trackable} href="" >
                 <g id="alsace" className={CarteStyle._31AQE} >
@@ -478,9 +478,8 @@ export default function Carte(){
             
           </ul>
         </div>
-    </div>,
-    <div className={`${CarteStyle.under_carte_texte}`}>
-    test de ou ce place le texte 
+     
     </div>
+    
     )
 }

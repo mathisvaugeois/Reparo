@@ -82,9 +82,16 @@
     height: 400px;
 
 }
-.carte_under_carte_texte__c22RG{
-  font-size: medium;
-}
 
 
 
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/styles/components/text.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.text_under_carte_texte__1dMGs{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    margin-left: 10%;
+    margin-top: 7%;
+  }
