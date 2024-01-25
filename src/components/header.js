@@ -6,9 +6,9 @@ export default function Header(){
         <nav className={HeaderStyles.PageCentrale}>
           <div className={HeaderStyles.BandeMenuHaut}>
             <ul className={HeaderStyles.MenuRubriques}>
-              <li><a href="/">Accueil</a></li>
-              <li><a href="/annonce/123">Annonce</a></li>
-              <li><a href="/contact">À propos de nous</a></li>
+              <li><Link href="/">Accueil</Link></li>
+              <li><Link href="/annonce/123">Annonce</Link></li>
+              <li><Link href="/contact">À propos de nous</Link></li>
             </ul>
           </div>
         </nav>

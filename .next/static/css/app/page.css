@@ -1,0 +1,81 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/styles/components/carte.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.carte_trackable__XrGwg {
+    color: #369;
+    -webkit-transition: all,.3s;
+    transition-timing-function: ease, ease;
+    transition: all,.3s;
+    transition-duration: 0s, 0.3s;
+    transition-timing-function: cubic-bezier(0.39, 0.04, 0.3, 0.93), ease;
+    transition-delay: 0s, 0s;
+    transition-property: all, all;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /*background-repeat-x: initial;
+    background-repeat-y: initial;*/
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+  }
+  
+  .carte__31AQE__EMz79{
+    cursor: pointer;
+    fill: #1da5e4;
+    stroke: #172554;
+  
+    transition: fill .3s
+  }
+  
+  .carte__31AQE__EMz79:hover path {
+    fill: lightcoral
+  }
+  
+  .carte_carte__19WIC{
+  position: absolute;
+  right:  0%;
+
+  }
+  
+  .carte_Website_name__JjZgP{
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  font-size:larger ;
+  }
+
+  /* à modifier */
+.carte_container___FTN1 div {
+  margin: 10px;
+  padding: 10px;
+  }
+.carte_container___FTN1 {
+    display: flex;
+    
+}
+
+
+.carte_list_carte__9XZhs {
+  margin: 10;
+  padding: 10;
+  list-style: decimal; /* Supprime les puces de la liste */
+}
+
+.carte_list_container__sbfi_,
+.carte_svg_container__yHHrr {
+    padding: 10px;
+}
+
+.carte_svg_container__yHHrr   {
+    flex: 1; /* Permet à cette div de prendre tout l'espace disponible */
+    box-sizing: border-box ;
+    width: 80%;
+}
+
+
