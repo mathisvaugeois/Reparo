@@ -1,12 +1,14 @@
 .container {
     display: flex;
-  }
-  
- .container>* {
-    margin: 0 10px;
-    flex: 1;
+    gap : 20px
   }
 
   .aproposlist{
     list-style: none;
   }
+  .column {
+    flex: 1;
+    
+    padding: 20px;
+    text-align: center;
+}

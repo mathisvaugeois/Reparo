@@ -3,48 +3,50 @@ import Link from 'next/link'
 
 export default function Footer(){
     return(
-         <div id="container"> 
-            <p>
-                <h3>A propos de Réparo</h3>
-                <ul id='aproposlist'>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-
-                </ul>
-            </p>
-            <p>
-            <h3>Information légales</h3>
-                <ul id='infolegal'>
-                    <li></li>
+         <div className={`${footerStyle.container}`}> 
+            <div>
+                A propos de Réparo
+                <ul className={`${footerStyle.column}`}>
+                    <li>Qui sommes nous?</li>
                     <li></li>
                     <li></li>
                     <li></li>
 
                 </ul>
-            </p>
-            <p>
-            <h3>Nos solutions Pro</h3>
-                <ul id='solutionpro'>
+            </div>
+            <div>
+            Information légales
+                <ul className={`${footerStyle.column}`}>
+                    <li>Condition générales d'utilisation</li>
+                    <li>Référencement et classement des annonces</li>
+                    <li>Condition générales de vente</li>
+                    <li>Vie privée / cookies</li>
+                    <li>Vos droit et obligation </li>
                     <li></li>
+
+                </ul>
+            </div>
+            <div>
+            Nos solutions Pro
+                <ul className={`${footerStyle.column}`}>
+                    <li>Publicité</li>
                     <li></li>
                     <li></li>
                     <li></li>
 
                 </ul>
-            </p>
-            <p>
-            <h3>Foire aux questions</h3>
-                <ul id='faq'>
-                    <li></li>
+            </div>
+            <div>
+            Foire aux questions
+                <ul className={`${footerStyle.column}`}>
+                    <li>Aide</li>
                     <li></li>
                     <li></li>
                     <li></li>
 
                 </ul>
             
-            </p>
+            </div>
             
             
         </div>
