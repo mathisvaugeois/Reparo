@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+  }
+  
+ .container>* {
+    margin: 0 10px;
+    flex: 1;
+  }
+
+  .aproposlist{
+    list-style: none;
+  }
