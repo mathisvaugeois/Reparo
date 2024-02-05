@@ -1155,15 +1155,20 @@ ul.Header_MenuRubriques__4Z9GX{
   \***********************************************************************************************************************************************************************************************************************************************************************************/
 .footer_container__z7PxN {
     display: flex;
-    gap : 20px
+    gap : 20px;
+    background-color:  #172554;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-align: center;
+  }
+  .footer_center__cO1no{
+    margin-left: 0cap;
   }
 
-  .footer_aproposlist__Fg6tz{
-    list-style: none;
-  }
   .footer_column__MIDDH {
-    flex: 1;
-    
+    flex: 1;   
     padding: 20px;
     text-align: center;
+    /*font-size: medium;*/
 }

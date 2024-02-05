@@ -2,7 +2,7 @@ import footerStyle from '../styles/components/footer.module.css'
 import Link from 'next/link'
 
 export default function Footer(){
-    return(
+    return(<div className={`${footerStyle.center}`}>
          <div className={`${footerStyle.container}`}> 
             <div>
                 A propos de Réparo
@@ -49,6 +49,7 @@ export default function Footer(){
             </div>
             
             
+        </div>
         </div>
 
 

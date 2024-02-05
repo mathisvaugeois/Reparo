@@ -1,14 +1,19 @@
 .container {
     display: flex;
-    gap : 20px
+    gap : 20px;
+    background-color:  #172554;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-align: center;
+  }
+  .center{
+    margin-left: 0cap;
   }
 
-  .aproposlist{
-    list-style: none;
-  }
   .column {
-    flex: 1;
-    
+    flex: 1;   
     padding: 20px;
     text-align: center;
+    /*font-size: medium;*/
 }
