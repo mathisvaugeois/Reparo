@@ -3,11 +3,13 @@ import Link from "next/link"
 import { useState } from "react"
 import { signIn } from 'next-auth/react'
 import { useRouter } from "next/navigation"
+import { useToast } from "@/components/ui/use-toast"
 
 export default function SignIn() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const router = useRouter()
+    const { toast } = useToast()
 
     const loginUser = async (e) => {
         e.preventDefault();
@@ -19,17 +21,23 @@ export default function SignIn() {
         });
 
         if(signInData?.error){
-            console.log(signInData.error);
+            toast({
+                title: "Error",
+                description: "Oups, something went wrong",
+                variant: "destructive",
+              })
+            // console.log(signInData.error);
         } else {
+            router.refresh()
             router.push('/admin');
         }
     }
 
     return (
-        <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+        <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 pt-0">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                <img className="mx-auto h-20 w-auto" src="/logoReparo.png" alt="Reparo" />
-                <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Connectez-vous !</h2>
+                <img className="mx-auto h-auto w-auto" src="/logoReparo.png" alt="Reparo" />
+                <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Connectez-vous !</h2>
             </div>
 
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
