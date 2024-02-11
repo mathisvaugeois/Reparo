@@ -5,17 +5,17 @@ export default function Footer(){
     return(<div className={`${footerStyle.center}`}>
          <div className={`${footerStyle.container}`}> 
             <div>
-                A propos de Réparo
+                <span className={`${footerStyle.titre}`}>A propos de Réparo :</span>
                 <ul className={`${footerStyle.column}`}>
                     <li>Qui sommes nous?</li>
-                    <li></li>
-                    <li></li>
+                    <li>Nous rejoindre</li>
+                    <li>Nos engagements </li>
                     <li></li>
 
                 </ul>
             </div>
             <div>
-            Information légales
+            <span className={`${footerStyle.titre}`}>Information légales :</span>
                 <ul className={`${footerStyle.column}`}>
                     <li>Condition générales d'utilisation</li>
                     <li>Référencement et classement des annonces</li>
@@ -27,21 +27,21 @@ export default function Footer(){
                 </ul>
             </div>
             <div>
-            Nos solutions Pro
+            <span className={`${footerStyle.titre}`}>Nos solutions Pro :</span>
                 <ul className={`${footerStyle.column}`}>
                     <li>Publicité</li>
-                    <li></li>
-                    <li></li>
+                    <li>Annuaire des professionnels</li>
+                    <li>Autres solutions professionnels</li>
                     <li></li>
 
                 </ul>
             </div>
             <div>
-            Foire aux questions
+            <span className={`${footerStyle.titre}`}>Foire aux questions :</span>
                 <ul className={`${footerStyle.column}`}>
                     <li>Aide</li>
-                    <li></li>
-                    <li></li>
+                    <li>Le service de paiement sécurisé</li>
+                    <li>Statut de nos service</li>
                     <li></li>
 
                 </ul>
