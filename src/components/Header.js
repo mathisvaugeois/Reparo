@@ -1,4 +1,4 @@
-import HeaderStyles from '../styles/components/Header.module.css'
+import HeaderStyles from '../styles/components/header.module.css'
 import Link from 'next/link'
 import { getServerSession } from "next-auth"
 import { authOptions } from "@/lib/auth"
