@@ -1,5 +1,5 @@
 import Carte from '../components/Carte'
-import Text from '../components/text'
+import Text from '../components/Text'
 
 export default function Home() {
   return (

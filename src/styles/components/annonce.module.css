@@ -1,58 +1,62 @@
 .roundedRectangle {
-    width: 600px; /* Ajustez la largeur selon vos besoins */
-    height: 100px; /* Ajustez la hauteur selon vos besoins */
+    width: 1000px; /* Ajustez la largeur selon vos besoins */
+    height: 150px; /* Ajustez la hauteur selon vos besoins */
     border-radius: 10px; /* Ajustez le rayon de bordure pour arrondir les coins */
-    background-color: #1da5e4; /* Couleur de fond du rectangle */
+    background-color: #ffffff; /* Couleur de fond du rectangle */
     border: 2px solid #172554;
     opacity: 0.9;
     display: flex;
     /*align-items: center;*/
     justify-content: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .imageCarre {
-    width: 94px; /* Ajustez la largeur selon vos besoins */
-    height: 94px; /* Ajustez la hauteur selon vos besoins */
+    width: 135px; /* Ajustez la largeur selon vos besoins */
+    height: 135px; /* Ajustez la hauteur selon vos besoins */
     border-radius: 10px; /* Ajustez le rayon de bordure pour arrondir les coins */
-    margin-left: 2px;
-    margin-top: 1.5px;
+    margin-left: 5px;
+    margin-top: 5.5px;
     background-color: lightcoral; /* Couleur de fond du rectangle */
     opacity: 0.8;
     border: 2px solid rgb(236, 111, 111);
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
   }
 
   .titreAnnonce {
-    margin-left: 10px;
     margin-top : 1.5px;
+    font-weight: bold;
     text-align: left;
     font-size: 17px;
   }
 
   .description {
-    margin-left: 10px;
     margin-top : 1.5px;
     text-align: left;
     font-size: 16px;
-
+    max-width: 800px;
+    text-align: justify;
   }
 
   .autre {
-    margin-left: 10px;
     margin-top : 1.5px;
     text-align: left;
-    font-size: 18px;
+    font-size: 12px;
   }
 
+  .content {
+    padding: 10px; /* Ajoutez un espace intérieur pour améliorer la mise en page */
+    margin-left: 3px;
+  }
+
+  .otherInfo {
+    display: flex;
+    justify-content: space-between;
+  }
   /*lightcoral
   fill: #1da5e4;
-    stroke: #172554;
-    
-    
-    
-    
-    
-    
-    */
+  stroke: #172554;
+  */
