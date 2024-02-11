@@ -1,4 +1,5 @@
 import User from "@/components/User";
+import Link from 'next/link'
 import { authOptions } from "@/lib/auth"
 import { getServerSession } from "next-auth"
 
@@ -10,6 +11,7 @@ export default async function Admin() {
         return (
         <>
             <h2> Admin page - bon retour {session?.user.username} </h2>;
+            <Link href="/creation">Création d'annonce</Link>
             <h2>Client Session</h2>
             <User />
             <h2> Server Session </h2>
