@@ -4,6 +4,7 @@ import '../styles/global.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { Toaster } from '@/components/ui/toaster';
+import Provider from '@/components/provider';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,13 +20,15 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <Header />
-        <div style={{ marginTop: '85px' }}>
-          {children}
-        </div>
-      <Footer />
-      <Toaster></Toaster>
+        <Provider>
+          <Header />
+          <div style={{ marginTop: '85px' }}>
+            {children}
+          </div>
+          <Footer />
+          <Toaster></Toaster>
+        </Provider>
       </body>
-    </html>
+    </html >
   )
 }
