@@ -5,9 +5,10 @@ import { getServerSession } from "next-auth"
 import { authOptions } from "@/lib/auth"
 import SignOutButton from './SignOutButton'
 
-const session = await getServerSession(authOptions);
 
-export default function Header(){
+
+export default async function Header(){
+  const session = await getServerSession(authOptions) ;
     return(
         <nav className={HeaderStyles.PageCentrale}>
           <div className={HeaderStyles.BandeMenuHaut}>

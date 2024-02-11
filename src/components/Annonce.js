@@ -1,15 +1,5 @@
 import AnnonceStyles from '../styles/components/annonce.module.css'
-<<<<<<< HEAD
 
-export default function Annonce(){
-    return(
-        <div className={AnnonceStyles.roundedRectangle}>
-          <div className={AnnonceStyles.imageCarre}> </div>
-          <div className={AnnonceStyles.titreAnnonce}> Chaise en bois </div>
-          <div className={AnnonceStyles.description}> Ma chaise en bois style victorien c'est caaser sur le dossier je recherche une personne qui serait capable de restorer cette chaise </div>
-        </div>
-    )
-=======
 import Link from 'next/link'
 
 export default function Annonce(){
@@ -31,5 +21,5 @@ export default function Annonce(){
       </Link>
     </div>
   )
->>>>>>> e780224c5fe74ef01f48340f22aeeccff5a37cc8
+
 }
