@@ -10,7 +10,7 @@ export default function Footer(){
                     <li>Qui sommes nous?</li>
                     <li>Nous rejoindre</li>
                     <li>Nos engagements </li>
-                    <li></li>
+                    
 
                 </ul>
             </div>
@@ -20,9 +20,7 @@ export default function Footer(){
                     <li>Condition générales d'utilisation</li>
                     <li>Référencement et classement des annonces</li>
                     <li>Condition générales de vente</li>
-                    <li>Vie privée / cookies</li>
-                    <li>Vos droit et obligation </li>
-                    <li></li>
+                    
 
                 </ul>
             </div>
@@ -32,7 +30,7 @@ export default function Footer(){
                     <li>Publicité</li>
                     <li>Annuaire des professionnels</li>
                     <li>Autres solutions professionnels</li>
-                    <li></li>
+                   
 
                 </ul>
             </div>
@@ -42,7 +40,7 @@ export default function Footer(){
                     <li>Aide</li>
                     <li>Le service de paiement sécurisé</li>
                     <li>Statut de nos service</li>
-                    <li></li>
+                    
 
                 </ul>
             

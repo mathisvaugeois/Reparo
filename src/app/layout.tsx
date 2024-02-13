@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
 <Provider>
         <Header />
-        <div style={{ marginTop: '85px' }}>
+        <div style={{ marginTop: '85px' , marginBottom: '200px'}}>
           {children}
         </div>
       <Footer />

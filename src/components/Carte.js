@@ -5,7 +5,7 @@ export default function Carte(){
 
     <div className={`${CarteStyle.container}`}>
         <div  className={`${CarteStyle.svg_container} ${CarteStyle.carte}`}>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="800" height="800" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 0 0" xmlSpace="preserve" style={{marginLeft:400,zIndex:5}}>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="800" height="700" x="0px" y="0px" viewBox="0 0 800 700" enableBackground="new 0 0 0 0" xmlSpace="preserve" style={{marginLeft:400,zIndex:5}}>
               <g><a title="Alsace" className={CarteStyle.trackable} href="" >
                 <g id="alsace" className={CarteStyle._31AQE} >
                   <path d="M540.3,215.4c4.4-4.6,13.2-22.6,13.4-27.6c0.4-8-11-10.8-7.6-15.4

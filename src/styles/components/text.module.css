@@ -1,8 +1,8 @@
 .under_carte_texte{
-    font-size: medium;
+    font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 7%;
     padding-right: 7%;
     z-index: 99;
   }
