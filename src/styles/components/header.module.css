@@ -31,7 +31,7 @@ ul.MenuRubriques{
 }
 
 .MenuRubriques li{
-    display: inline;
+    display: inline-flex;
     list-style-type: none;
 }
 

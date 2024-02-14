@@ -58,6 +58,14 @@
   /* Supprime les puces de la liste */
   font-size: x-large;
   font-weight: bold;
+ 
+}
+.list_carte li{
+  text-decoration: none;
+}
+.list_carte li:hover {
+text-decoration: underline;
+color: #224061;
 }
 
 @media(max-width: 885px) {

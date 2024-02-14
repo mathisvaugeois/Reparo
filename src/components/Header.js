@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { getServerSession } from "next-auth"
 import { authOptions } from "@/lib/auth"
 import SignOutButton from './SignOutButton'
+import Image from 'next/image'
 
 
 
@@ -12,7 +13,13 @@ export default async function Header(){
     return(
         <nav className={HeaderStyles.PageCentrale}>
           <div className={HeaderStyles.BandeMenuHaut}>
+           
             <ul className={HeaderStyles.MenuRubriques}>
+            <li id={HeaderStyles.image_pos}><Image 
+              src="/logoReparo.png"  
+              width={50}
+              height={50}
+              alt="Logo du site"/></li>
               <li><Link href="/">Accueil</Link></li>
               <li><Link href="/annonce/123">Annonce</Link></li>
               <li><Link href="/contact">À propos de nous</Link></li>

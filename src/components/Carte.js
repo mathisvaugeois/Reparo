@@ -7,7 +7,7 @@ export default function Carte() {
     <div className={`${CarteStyle.container}`}>
 
       <div className={`${CarteStyle.list_container}`}>
-        <ul className={`${CarteStyle.list_carte}`}>
+        <ul id="under_line" className={`${CarteStyle.list_carte}`}>
           <li><Link href='/annonce/auvergnerhonealpes'>Auvergne-Rhône-Alpes</Link></li>
           <li><Link href='/annonce/bourgognefranchecompte'>Bourgogne-Franche-Comté</Link></li>
           <li><Link href='/annonce/bretagne'>Bretagne</Link></li>
