@@ -7,9 +7,9 @@ export default function Footer(){
             <div>
                 <span className={`${footerStyle.titre}`}>A propos de Réparo :</span>
                 <ul className={`${footerStyle.column}`}>
-                    <li><Link href="/">Qui sommes nous?</Link></li>
-                    <li><Link href="/">Nous rejoindre</Link></li>
-                    <li><Link href="/">Nos engagements </Link></li>
+                    <li><Link href="/contact">Qui sommes nous?</Link></li>
+                    <li><Link href="/LoremIpsum">Nous rejoindre</Link></li>
+                    <li><Link href="/LoremIpsum">Nos engagements </Link></li>
                     
 
                 </ul>
@@ -17,9 +17,9 @@ export default function Footer(){
             <div>
             <span className={`${footerStyle.titre}`}>Information légales :</span>
                 <ul className={`${footerStyle.column}`}>
-                    <li><Link href="/">Condition générales d'utilisation</Link></li>
-                    <li><Link href="/">Référencement et classement des annonces</Link></li>
-                    <li><Link href="/">Condition générales de vente</Link></li>
+                    <li><Link href="/LoremIpsum">Condition générales d'utilisation</Link></li>
+                    <li><Link href="/LoremIpsum">Référencement et classement des annonces</Link></li>
+                    <li><Link href="/LoremIpsum">Condition générales de vente</Link></li>
                     
 
                 </ul>
@@ -27,9 +27,9 @@ export default function Footer(){
             <div>
             <span className={`${footerStyle.titre}`}>Nos solutions Pro :</span>
                 <ul className={`${footerStyle.column}`}>
-                    <li><Link href="/">Publicité</Link></li>
-                    <li><Link href="/">Annuaire des professionnels</Link></li>
-                    <li><Link href="/">Autres solutions professionnels</Link></li>
+                    <li><Link href="/LoremIpsum">Publicité</Link></li>
+                    <li><Link href="/LoremIpsum">Annuaire des professionnels</Link></li>
+                    <li><Link href="/LoremIpsum">Autres solutions professionnels</Link></li>
                    
 
                 </ul>
@@ -37,9 +37,9 @@ export default function Footer(){
             <div>
             <span className={`${footerStyle.titre}`}>Foire aux questions :</span>
                 <ul className={`${footerStyle.column}`}>
-                    <li><Link href="/">Aide</Link></li>
-                    <li><Link href="/">Le service de paiement sécurisé</Link></li>
-                    <li><Link href="/">Statut de nos service</Link></li>
+                    <li><Link href="/LoremIpsum">Aide</Link></li>
+                    <li><Link href="/LoremIpsum">Le service de paiement sécurisé</Link></li>
+                    <li><Link href="/LoremIpsum">Statut de nos service</Link></li>
                     
 
                 </ul>

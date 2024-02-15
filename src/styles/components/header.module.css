@@ -44,9 +44,9 @@ ul.MenuRubriques{
     text-decoration: none;
     color: #ffffff;
     background-color: #172554;
-}
+}   
 
-.MenuRubriques a:not(.image_pos):hover{
+.MenuRubriques li:not(.image_pos):hover{
     text-decoration: none;
     color: #fffcff;
     background-color: #1E5388;
