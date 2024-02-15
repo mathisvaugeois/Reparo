@@ -8,19 +8,19 @@ export default function Carte() {
 
       <div className={`${CarteStyle.list_container}`}>
         <ul id="under_line" className={`${CarteStyle.list_carte}`}>
-          <li><Link href='/annonce/auvergnerhonealpes'>Auvergne-Rhône-Alpes</Link></li>
-          <li><Link href='/annonce/bourgognefranchecompte'>Bourgogne-Franche-Comté</Link></li>
-          <li><Link href='/annonce/bretagne'>Bretagne</Link></li>
-          <li><Link href='/annonce/centrevaldeloire'>Centre-Val de Loire</Link></li>
-          <li><Link href='/annonce/corse'>Corse</Link></li>
-          <li><Link href='/annonce/grandest'>Grand Est</Link></li>
-          <li><Link href='/annonce/hautdefrance'>Haut-de-France</Link></li>
-          <li><Link href='/annonce/iledefrance'>Île-de-France</Link></li>
-          <li><Link href='/annonce/normandie'>Normandie</Link></li>
-          <li><Link href='/annonce/nouvelleacquitaine'>Nouvelle-Aquitaine</Link></li>
-          <li><Link href='/annonce/occitanie'>Occitanie</Link></li>
-          <li><Link href='/annonce/paysdelaloire'>Pays de la Loire</Link></li>
-          <li><Link href='/annonce/provencealpescotedazur'>Provence-Alpes-Côte d'Azur</Link></li>
+          <li><Link href='/annonce/Auvergne-Rhone-Alpes'>Auvergne-Rhône-Alpes</Link></li>
+          <li><Link href='/annonce/Bourgogne-Franche-Compte'>Bourgogne-Franche-Comté</Link></li>
+          <li><Link href='/annonce/Bretagne'>Bretagne</Link></li>
+          <li><Link href='/annonce/Centre-Val-de-Loire'>Centre-Val de Loire</Link></li>
+          <li><Link href='/annonce/Corse'>Corse</Link></li>
+          <li><Link href='/annonce/Grand-Est'>Grand Est</Link></li>
+          <li><Link href='/annonce/Haut-de-France'>Haut-de-France</Link></li>
+          <li><Link href='/annonce/Ile-de-France'>Île-de-France</Link></li>
+          <li><Link href='/annonce/Normandie'>Normandie</Link></li>
+          <li><Link href='/annonce/Nouvelle-Aquitaine'>Nouvelle-Aquitaine</Link></li>
+          <li><Link href='/annonce/Occitanie'>Occitanie</Link></li>
+          <li><Link href='/annonce/Pays-de-la-Loire'>Pays de la Loire</Link></li>
+          <li><Link href='/annonce/Provence-Alpes-Cote-d-azur'>Provence-Alpes-Côte d'Azur</Link></li>
         </ul>
       </div>
 
