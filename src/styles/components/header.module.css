@@ -5,6 +5,7 @@
     
 .BandeMenuHaut {
     position: fixed;
+    display: inline;
     top: 0;
     left: 0;
     width: 100%;
@@ -45,7 +46,7 @@ ul.MenuRubriques{
     background-color: #172554;
 }
 
-.MenuRubriques a:hover{
+.MenuRubriques a:not(.image_pos):hover{
     text-decoration: none;
     color: #fffcff;
     background-color: #1E5388;

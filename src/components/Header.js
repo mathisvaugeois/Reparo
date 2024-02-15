@@ -15,11 +15,11 @@ export default async function Header(){
           <div className={HeaderStyles.BandeMenuHaut}>
            
             <ul className={HeaderStyles.MenuRubriques}>
-            <li id={HeaderStyles.image_pos}><Image 
+            <li className={HeaderStyles.image_pos} style={{float:'left'}}><Link href="/"><Image 
               src="/logoReparo.png"  
-              width={50}
-              height={50}
-              alt="Logo du site"/></li>
+              width={60}
+              height={60}
+              alt="Logo du site"/></Link></li>
               <li><Link href="/">Accueil</Link></li>
               <li><Link href="/annonce/123">Annonce</Link></li>
               <li><Link href="/contact">À propos de nous</Link></li>
