@@ -1,4 +1,5 @@
 import Annonce from '@/components/Annonce'
+import AnnonceStyles from '@/styles/components/annonce.module.css'
 
 export default function AnnoncePage({ params }: { params: { id: string } }){
   // Utilisez l'ID pour récupérer les données spécifiques à cette annonce
@@ -6,7 +7,7 @@ export default function AnnoncePage({ params }: { params: { id: string } }){
 
   // Exemple d'utilisation fictive de l'ID
   const annonceData = {
-    title: `Annonce ${params.id}`,
+    title: `Annonce trouvé dans ${params.id}`,
     content: `Contenu de l'annonce ${params.id}`,
   };
 //Faire un for pour le nombres de lignes dans la bdd
@@ -14,10 +15,13 @@ export default function AnnoncePage({ params }: { params: { id: string } }){
 //les afficher dans annonce
   return (
     <div style={{ paddingTop: '75px',paddingLeft: '10px' }}>
-      <h1>{annonceData.title}</h1>
-      <p>{annonceData.content}</p>
+      
+      <div className={AnnonceStyles.title}>{annonceData.title}</div>
       <Annonce />
       <Annonce />
     </div>
   );
 };
+//Remplacer par div title 
+      //<h1>{annonceData.title}</h1>
+      //<p>{annonceData.content}</p>

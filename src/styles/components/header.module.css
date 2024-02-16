@@ -5,6 +5,7 @@
     
 .BandeMenuHaut {
     position: fixed;
+    display: inline;
     top: 0;
     left: 0;
     width: 100%;
@@ -12,7 +13,7 @@
     z-index: 999;
     padding-top: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     color: #FFFFFF;
     background-color: #172554;
     overflow: hidden;
@@ -31,8 +32,11 @@ ul.MenuRubriques{
 }
 
 .MenuRubriques li{
-    display: inline;
+    display: inline-flex;
     list-style-type: none;
+}
+.MenuRubriques li:not(.image_pos){
+    margin-top: 0.5%;
 }
 
 .MenuRubriques a {
@@ -43,9 +47,9 @@ ul.MenuRubriques{
     text-decoration: none;
     color: #ffffff;
     background-color: #172554;
-}
+}   
 
-.MenuRubriques a:hover{
+.MenuRubriques li:not(.image_pos):hover{
     text-decoration: none;
     color: #fffcff;
     background-color: #1E5388;

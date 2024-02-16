@@ -13,10 +13,13 @@ datasource db {
 model Annonce {
   id        String     @default(cuid()) @id
   title     String
-  content   String?
+  content   String
   published Boolean @default(false)
   author    User?   @relation(fields: [authorId], references: [id])
   authorId  String?
+  imageUrl  String?
+  region    String
+  price     Float
 }
 
 model User {

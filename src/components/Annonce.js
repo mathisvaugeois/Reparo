@@ -1,11 +1,12 @@
 import AnnonceStyles from '../styles/components/annonce.module.css'
+
 import Link from 'next/link'
 
 export default function Annonce(){
   return(
     <div>
       <Link href="/pageAnnonce" className={AnnonceStyles.roundedRectangle}>
-        <div className={AnnonceStyles.imageCarre} id="img"><img src="/conquete.jpg"/></div>
+        <div className={AnnonceStyles.imageCarre} id="img"><img src="/chaise.jpg"/></div>
         <div className={AnnonceStyles.content}>
           <div className={AnnonceStyles.titreAnnonce} id="titre"> Chaise en bois</div>
           <div className={AnnonceStyles.description} id="desc">
@@ -20,4 +21,5 @@ export default function Annonce(){
       </Link>
     </div>
   )
+
 }

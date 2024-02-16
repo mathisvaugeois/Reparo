@@ -20,15 +20,15 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <Provider>
-          <Header />
-          <div style={{ marginTop: '85px' }}>
-            {children}
-          </div>
-          <Footer />
-          <Toaster></Toaster>
-        </Provider>
+<Provider>
+        <Header />
+        <div style={{ marginTop: '85px' , marginBottom: '200px', marginRight: '7%', marginLeft: '7%'}}>
+          {children}
+        </div>
+      <Footer />
+      <Toaster></Toaster>
+</Provider>
       </body>
-    </html >
+    </html>
   )
 }

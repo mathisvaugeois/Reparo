@@ -5,44 +5,42 @@ export default function Footer(){
     return(<div className={`${footerStyle.center}`}>
          <div className={`${footerStyle.container}`}> 
             <div>
-                A propos de Réparo
+                <span className={`${footerStyle.titre}`}>A propos de Réparo :</span>
                 <ul className={`${footerStyle.column}`}>
-                    <li>Qui sommes nous?</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><Link href="/contact">Qui sommes nous?</Link></li>
+                    <li><Link href="/LoremIpsum">Nous rejoindre</Link></li>
+                    <li><Link href="/LoremIpsum">Nos engagements </Link></li>
+                    
 
                 </ul>
             </div>
             <div>
-            Information légales
+            <span className={`${footerStyle.titre}`}>Information légales :</span>
                 <ul className={`${footerStyle.column}`}>
-                    <li>Condition générales d'utilisation</li>
-                    <li>Référencement et classement des annonces</li>
-                    <li>Condition générales de vente</li>
-                    <li>Vie privée / cookies</li>
-                    <li>Vos droit et obligation </li>
-                    <li></li>
+                    <li><Link href="/LoremIpsum">Condition générales d'utilisation</Link></li>
+                    <li><Link href="/LoremIpsum">Référencement et classement des annonces</Link></li>
+                    <li><Link href="/LoremIpsum">Condition générales de vente</Link></li>
+                    
 
                 </ul>
             </div>
             <div>
-            Nos solutions Pro
+            <span className={`${footerStyle.titre}`}>Nos solutions Pro :</span>
                 <ul className={`${footerStyle.column}`}>
-                    <li>Publicité</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><Link href="/LoremIpsum">Publicité</Link></li>
+                    <li><Link href="/LoremIpsum">Annuaire des professionnels</Link></li>
+                    <li><Link href="/LoremIpsum">Autres solutions professionnels</Link></li>
+                   
 
                 </ul>
             </div>
             <div>
-            Foire aux questions
+            <span className={`${footerStyle.titre}`}>Foire aux questions :</span>
                 <ul className={`${footerStyle.column}`}>
-                    <li>Aide</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><Link href="/LoremIpsum">Aide</Link></li>
+                    <li><Link href="/LoremIpsum">Le service de paiement sécurisé</Link></li>
+                    <li><Link href="/LoremIpsum">Statut de nos service</Link></li>
+                    
 
                 </ul>
             

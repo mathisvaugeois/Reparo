@@ -1,0 +1,15 @@
+.under_carte_texte {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    margin-left: 3%;
+    margin-top: 2%;
+    z-index: 99;
+  }
+  
+  .linking {
+    color: lightcoral;
+    text-decoration: none;
+  }
+  .linking:hover {
+    text-decoration: underline;
+  }
