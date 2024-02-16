@@ -12,6 +12,7 @@ export default function Home() {
         que vous cherchiez des annonces de réparation de voiture, vélo ou alors faire de la plomberie, éléctricité, peinture
         ou des réparation en tout genre.
       </div>
+      <div className={`${TextStyle.marche}`}></div>
     </main>
   )
 }

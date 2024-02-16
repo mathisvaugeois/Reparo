@@ -14,11 +14,15 @@ export default function AnnoncePage({ params }: { params: { id: string } }){
 //et récupérer tous les ids a chaque fois 
 //les afficher dans annonce
   return (
-    <div style={{ paddingTop: '75px',paddingLeft: '10px' }}>
-      
-      <div className={AnnonceStyles.title}>{annonceData.title}</div>
-      <Annonce />
-      <Annonce />
+    <div style={{ paddingTop: '75px',paddingLeft: '10px', marginBottom:'500px' }}>
+      <div className={AnnonceStyles.annonce}>
+        <div className={AnnonceStyles.title}>{annonceData.title}</div>
+        <Annonce />
+        <Annonce />
+        <Annonce />
+        <Annonce />
+        <div className={AnnonceStyles.marche}></div>
+      </div>
     </div>
   );
 };

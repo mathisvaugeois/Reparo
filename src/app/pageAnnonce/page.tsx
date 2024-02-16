@@ -10,7 +10,7 @@ export default function PageAnnoncePage({ params }: { params: { id: string } }){
 //récupérer les ids de la bdd de cette ligne
 //les afficher dans pageAnnonce
   return (
-    <div style={{ paddingTop: '75px',paddingLeft: '10px' }}>    
+    <div style={{ paddingTop: '75px',paddingLeft: '10px'}}>    
       <PageAnnonce />
     </div>
   );

@@ -21,7 +21,7 @@ export default async function Header(){
               height={60}
               alt="Logo du site"/></Link></li>
               <li><Link href="/">Accueil</Link></li>
-              <li><Link href="/annonce/123">Annonce</Link></li>
+              <li><Link href="/annonce/France">Annonce</Link></li>
               <li><Link href="/contact">À propos de nous</Link></li>
               <li style={{float:'right'}}><Link href="/admin">admin</Link></li>
             

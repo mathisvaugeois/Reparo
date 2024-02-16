@@ -6,7 +6,7 @@
   width: 800px;
 }
   .marche{
-    margin-bottom : 500px;
+    margin-bottom : 350px;
   }
   .imageRectangle {
     width: 800px; /* Ajustez la largeur selon vos besoins */
@@ -28,6 +28,7 @@
     max-height: 100%;
     display: block;
     margin: auto;
+    border-radius: 10px; /* Ajustez le rayon de bordure pour arrondir les coins */
   }
 
   .titreAnnonce {
