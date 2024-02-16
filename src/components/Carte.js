@@ -21,12 +21,17 @@ export default function Carte() {
           <li><Link href='/annonce/Occitanie'>Occitanie</Link></li>
           <li><Link href='/annonce/Pays-de-la-Loire'>Pays de la Loire</Link></li>
           <li><Link href='/annonce/Provence-Alpes-Cote-d-azur'>Provence-Alpes-Côte d'Azur</Link></li>
+          <li><Link href='/annonce/Guadeloupe'>Guadeloupe</Link></li>
+          <li><Link href='/annonce/Martinique'>Martinique</Link></li>
+          <li><Link href='/annonce/Guyane'>Guyane</Link></li>
+          <li><Link href='/annonce/Reunion'>Réunion</Link></li>
+
         </ul>
       </div>
 
       <div className={`${CarteStyle.svg_container} ${CarteStyle.carte}`}>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="550" height="540" x="0px" y="0px" viewBox="0 0 625 700" enableBackground="new 0 0 0 0" xmlSpace="preserve" style={{ zIndex: 5 }}>
-          <g><a title="Alsace" className={CarteStyle.trackable} href="" >
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="650" height="650" x="0px" y="0px" viewBox="0 0 625 700" enableBackground="new 0 0 0 0" xmlSpace="preserve" style={{ zIndex: 5 }}>
+          <g><a title="Alsace" className={CarteStyle.trackable} href="/annonce/Grand-Est" >
             <g id="alsace" className={CarteStyle._31AQE} >
               <path d="M540.3,215.4c4.4-4.6,13.2-22.6,13.4-27.6c0.4-8-11-10.8-7.6-15.4
               c2.3-3.2,7.8-2.7,9.1-5.9c1.8-4.1,1.5-8.9,0.8-12.5c-0.8-4.4-10.9-1-13.8-7.1
@@ -39,7 +44,7 @@ export default function Carte() {
               </path>
             </g>
           </a>
-            <a title="Aquitaine" className={CarteStyle.trackable} href="">
+            <a title="Aquitaine" className={CarteStyle.trackable} href="/annonce/Nouvelle-Aquitaine">
               <g id="aquitaine" className={CarteStyle._31AQE} >
                 <path d="M179.2,536.8c-6.1-2.9-11.8-6.1-15-9.7c-1.2,1.7-4.1,4.2-5.2,3.9c-1.3-0.3-0.5-4.3-0.4-5
               c0.7-4.9-0.2-7-1.5-7.8c-1.6-1-3.9-0.8-4.9-0.9c-3.8-0.3-6.6-3.6-7.6-5.9c2-0.5,7.1-3.6,10.3-6.8
@@ -61,7 +66,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Auvergne" className={CarteStyle.trackable} href="">
+            <a title="Auvergne" className={CarteStyle.trackable} href="/annonce/Auvergne-Rhone-Alpes">
               <g id="auvergne" className={CarteStyle._31AQE} >
                 <path d="M405.9,308.9c-1.1-2.2-1.6-5.4-2.4-7.8c-0.5-1.4-1.2-2.6-2-2.8c-1.9-0.6-4-0.3-6.2-0.2
               c-2.6,0-5.2-0.1-7.5-0.3c-5.1-0.4-9-1.7-12-3.3c-2.1-1.1-3.4-2.2-4.2-2.8c-1.5,1.9-2.7,2.7-4.3,3.4
@@ -83,7 +88,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Basse-Normandie" className={CarteStyle.trackable} href="">
+            <a title="Basse-Normandie" className={CarteStyle.trackable} href="/annonce/Normandie">
               <g id="basse_normandie" className={CarteStyle._31AQE}>
                 <path d="M272.7,169.4c-1.4-3.2,3.6-6.7,2.3-7.6c-2.9-2.2-6.3-4.7-9.4-6.6c-2.8-1.7-5.1-0.8-6.9-2
               c-4.5-3-2.3-20.9-6-25c-2.6-2.8,0.2-7.7-2.1-10.1c-1.1-1.1-2.3-1.2-3.4-1.9
@@ -100,7 +105,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Bourgogne" className={CarteStyle.trackable} href="">
+            <a title="Bourgogne" className={CarteStyle.trackable} href="/annonce/Bourgogne-Franche-Compte">
               <g id="bourgogne" className={CarteStyle._31AQE}>
                 <path d="M371,291.9c0.3-2.3,0.6-4.7,0.5-7.2c-0.1-6.5-2.9-13.6-4.7-18.8
               c-3.8-11.3-2.3-27.2-3.1-33.8c-0.6-5.8,12.4-15,11.3-19.7c-1.3-5.6-5.1-10-6.3-11
@@ -123,7 +128,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Bretagne" className={CarteStyle.trackable} href="bretagne">
+            <a title="Bretagne" className={CarteStyle.trackable} href="/annonce/Bretagne">
               <g id="bretagne" className={`${CarteStyle._31AQE} ${CarteStyle._20Pcj}`} >
                 <path d="M154.8,161c1,2.2,0.2,4.7,0.4,6.8c-1,0.8-10.8-0.2-16.5-0.4c-0.6-2.8-2.3-4.1-4.5-4.2
               c-4.5,0-12.3,6.2-15.8,5.7c-2.2-0.3-3.7-2.9-5.8-6.1c-1.7-2.6-3.9-5.6-6.4-7.8
@@ -144,7 +149,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Centre" className={CarteStyle.trackable} href="">
+            <a title="Centre" className={CarteStyle.trackable} href="/annonce/Centre-Val-de-Loire">
               <g id="centre" className={CarteStyle._31AQE}>
                 <path d="M270.3,284.8c1.3,1.1,3.4,8.2,3.9,10.7c1.2,5.1-0.7,8,1.2,9.2
               c7.5,4.9,12.8,10.6,11.9,14.1c2.4,0.9,4.9,1.6,7.5,2.2c2.4,0.5,4-0.9,6.8-1.2
@@ -164,7 +169,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Champagne-Ardenne" className={CarteStyle.trackable} href="">
+            <a title="Champagne-Ardenne" className={CarteStyle.trackable} href="/annonce/Grand-Est">
               <g id="champagne_ardenne" className={CarteStyle._31AQE}>
                 <path d="M387.2,163.5c-2.4-5.5-1.1-5.7,5.7-8.7c2.6-1.1,4.8-3.4,6.7-6.5c1.1-1.8-4.4-6.8-3.5-9.1
               c0.7-1.9,3.1,0,3.8-2c1.3-3.8-3.4-6.2-2.4-10.4c1.6-6.5,15.3-1.7,17.5-7.6c3.3-8.9-4.2-13.9,0.1-17
@@ -182,7 +187,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Corse" className={CarteStyle.trackable} href="">
+            <a title="Corse" className={CarteStyle.trackable} href="/annonce/Corse">
               <g id="corse" className={`${CarteStyle._31AQE} ${CarteStyle._2HlCq}`}>
                 <path d="M560.7,552.2c0,0,10.4,0,7.3-4.4c-3-4.4-11-2.4-4.9-7.7c6.1-5.2,21.2-26.6,31.7-20.5
               c3.5,2.1,6-0.9,3.7-10.5c-2.3-9.6,6.1-7.9,5.8-4.3c-0.2,3.7,0,19.7,0,19.7s4.4,1.1,2.8,12.4
@@ -193,7 +198,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Franche-Comté" className={CarteStyle.trackable} href="">
+            <a title="Franche-Comté" className={CarteStyle.trackable} href="/annonce/Bourgogne-Franche-Compte">
               <g id="franche_comte" className={CarteStyle._31AQE} >
                 <path d="M539.9,215.8c-1.9-0.6-10.9-3.4-17.2-7.5c-3,1.4-7.4,3.7-11.1,3.6
               c-3.5-0.1-5.7-3.5-8.9-3c-2.4,0.4-6.6,2.7-7,3.2c-3.3,3.5-6.2,7.2-6.9,7.9
@@ -207,7 +212,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Haute-Normandie" className={CarteStyle.trackable} href="">
+            <a title="Haute-Normandie" className={CarteStyle.trackable} href="/annonce/Normandie">
               <g id="haute_normandie" className={CarteStyle._31AQE}>
                 <path d="M274.7,162.1c-2.9-2.2-6.3-4.7-9.4-6.6c-2.8-1.7-5.1-0.8-6.9-2c-4.5-3-2.3-20.9-6-25
               c-2.6-2.8,0.2-7.7-2.1-10.1c-1.1-1.1-2.3-1.2-3.4-1.9c-1-0.8-3.9-2.8-3.2-6.7
@@ -220,7 +225,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Ile-de-France" className={CarteStyle.trackable} href="">
+            <a title="Ile-de-France" className={CarteStyle.trackable} href="/annonce/Ile-de-France">
               <g id="ile_de_france" className={`${CarteStyle._31AQE} ${CarteStyle._20Pcj}`}>
                 <path d="M348.1,138.9c4.1,2.8,13.4,8.3,21.2,2.4c4.8-3.6,16.3,16.5,23,13.5
               c-2.3,1.2-5.9,2.2-6.5,3.8c-0.8,2,0.7,4.3,1.1,5.6c0.6,1.8,3.3,3.2,4.2,4.4c1.4,1.9,1.6,3.3,1.3,4.5
@@ -233,7 +238,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Languedoc-Roussillon" className={CarteStyle.trackable} href="">
+            <a title="Languedoc-Roussillon" className={CarteStyle.trackable} href="/annonce/Occitanie">
               <g id="languedoc_roussillon" className={CarteStyle._31AQE}>
                 <path d="M429.7,507.9c-5.8-8.2-8.6-6.5-15.5-0.2c-1.1,1-3.6,3.6-6.2,6c-5.5,5.3-12.9,8-17.4,7.2
               c-2.1,1.4-5.9,4.3-11.7,9.8c-2,1.9-3.2,3.3-4.4,6.1c-1,2.3-0.8,3.7,0.6,6.3c1,1.9,1.7,4.9,1.3,9.6
@@ -251,7 +256,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Limousin" className={CarteStyle.trackable} href="">
+            <a title="Limousin" className={CarteStyle.trackable} href="/annonce/Centre-Val-de-Loire">
               <g id="limousin" className={CarteStyle._31AQE}>
                 <path d="M338.5,320.8c3.2,3.9,10.4,5.1,12.5,9c2,3.6,0.6,8.5,1.1,10.8c2.9,13.1-7.2,8.9-7.8,15.3
               c-0.8,8.3,6.7,19.8,6.5,24.4c-0.2,3-10,4.5-13.9,8.2c-5.2,4.8-4.8,12.7-4.8,15.2
@@ -268,7 +273,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Lorraine" className={CarteStyle.trackable} href="">
+            <a title="Lorraine" className={CarteStyle.trackable} href="/annonce/Grand-Est">
               <g id="lorraine" className={CarteStyle._31AQE}>
                 <path d="M470.8,104.6c-0.5,0.6-2.2,2.5-4.3,3.1c-1.5,0.4-4.2-2.5-6-2.2c-1.2,0.2-2.4,2.2-3.5,5.1
               c-0.8,2.1,3.5,6.7,2.7,9.3c-0.7,2.4-2.8,3.6-4.3,5.6c-1,1.3,2,14.3,0,19.2c-0.6,1.5-2,1.7-2.9,3
@@ -283,7 +288,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Midi-Pyrénées" className={CarteStyle.trackable} href="">
+            <a title="Midi-Pyrénées" className={CarteStyle.trackable} href="/annonce/Occitanie">
               <g id="midi_pyrenees" className={CarteStyle._31AQE} >
                 <path d="M312.4,567.8c3.2-0.8,18.7-1.2,19.7-5.9c0.7-3.4-9.4-4-10.8-8.5c-3.1-9.8,1.3-11,0.4-17
               c-0.8-5.2-11.5-10.3-12.6-15c-0.5-2,1-5.9,3.7-9c3.6-4,36.9,3.6,40.9-2.6c1.1-1.6-0.3-4.1,0.2-6
@@ -303,7 +308,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Nord-Pas-de-Calais" className={CarteStyle.trackable} href="">
+            <a title="Nord-Pas-de-Calais" className={CarteStyle.trackable} href="/annonce/Haut-de-France">
               <g id="nord_pas_de_calais" className={CarteStyle._31AQE}>
                 <path d="M311.6,21.9c0,0,29.5-7.8,34.1-10.1c4.6-2.3,6.6,4.3,6.6,6.9c0,2.7,1,7.6,1.7,7.8
               c0.7,0.2,10.6,7.4,22.1,6.9c0,0,1.6,12.6,6.2,15.2c0,0,4.5-3,6.5,0c1.9,3,6.7,10.4,15.5,10.7
@@ -316,7 +321,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Pays de la Loire" className={CarteStyle.trackable} href="">
+            <a title="Pays de la Loire" className={CarteStyle.trackable} href="/annonce/Pays-de-la-Loire">
               <g id="pays_de_la_loire" className={`${CarteStyle._31AQE} ${CarteStyle._20Pcj}`} >
                 <path d="M154.3,255.7c-0.2-0.3-0.9-1.7-2.4-2.7c-1.7-1.1-4.4-1.6-6.3-1.5c-2.4,0.2-5.2,2.5-8,3.2
               c-2.2,0.5-4.3,0.9-6.2,0.9c-2.3,0-4.4-0.4-6.3-0.5c0-1.4,1-7.5,2.1-13.1c2,0.2,5.9-0.5,10.6-4.6
@@ -337,7 +342,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Picardie" className={CarteStyle.trackable} href="">
+            <a title="Picardie" className={CarteStyle.trackable} href="/annonce/Haut-de-France">
               <g id="picardie" className={CarteStyle._31AQE} >
                 <path d="M348.5,138.5c4.1,2.8,13.4,8.3,21.2,2.4c4.8-3.6,16.3,16.5,23,13.5
               c2.6-1.1,4.8-3.4,6.7-6.5c1.1-1.8-4.4-6.8-3.5-9.1c0.7-1.9,3.1,0,3.8-2c1.3-3.8-3.4-6.2-2.4-10.4
@@ -351,7 +356,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Poitou-Charentes" className={CarteStyle.trackable} href="">
+            <a title="Poitou-Charentes" className={CarteStyle.trackable} href="/annonce/Nouvelle-Aquitaine">
               <g id="poitou_charentes" className={CarteStyle._31AQE} >
                 <path d="M198.8,385.2c10.9-2.2,13.4,7,14.6,8.9c1.4,2,5.7,6.5,7.9,5.5c6.6-3,12.9-6.1,18.5-9
               c2.3-1.2-0.1-9.3,2-10.4c2-1,3.1-2.6,4.6-3.6c2.6-1.7,5.2-2.6,7.5-3.7c1.5-0.7-0.2-4.6,1.2-7
@@ -367,7 +372,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Provence-Alpes-Côte d'Azur" className={CarteStyle.trackable} href="" >
+            <a title="Provence-Alpes-Côte d'Azur" className={CarteStyle.trackable} href="/annonce/Provence-Alpes-Cote-d-azur" >
               <g id="provence_alpes_cote_d_azur" className={`${CarteStyle._31AQE} ${CarteStyle._20Pcj}`} >
                 <path d="M429.3,507.9c2.2,1,1.9,2.6,14.5,2.1c2.5-0.1,4.8,0.7,6.9,2c1.2,0.7,4.2,2.9,7,3.3
               c3.1,0.4,6.4,0,9.6,0.4c4.7,0.5,9.6,0.9,13.8,2.9c2.3,1.1,5.1,2.9,7.1,4.3c4.3,2.8,10.8,3,14.4,3.4
@@ -385,7 +390,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Rhône-Alpes" className={CarteStyle.trackable} href="" >
+            <a title="Rhône-Alpes" className={CarteStyle.trackable} href="/annonce/Auvergne-Rhone-Alpes" >
               <g id="rhone_alpes" className={CarteStyle._31AQE} >
                 <path d="M475.1,312.3c1.1,4.8,4.7,6.8,6.3,9.9c1.8,3.4,6.9-8.3,8.9-5.5c2,2.8,4.5,3,6.5,4.8
               c3.3,3.1,10-9.5,14-7.8c0,0.5,0.2,1.4,0.5,2.1c0.8,1.6,3.8,2.8,0.9,6.1c-5.9,6.8-4.7,8.6,0.4,9.6
@@ -406,7 +411,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Guadeloupe" className={CarteStyle.trackable} href="">
+            <a title="Guadeloupe" className={CarteStyle.trackable} href="/annonce/Guadeloupe">
               <g id="guadeloupe" className={`${CarteStyle._31AQE} ${CarteStyle._2HlCq}`}>
                 <path d="M132.6,689.9c2.7,2.5,3.2-2.1,3.2-2.1C135.4,684.4,129.9,687.5,132.6,689.9z">
                 </path>
@@ -425,7 +430,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Martinique" className={CarteStyle.trackable} href="">
+            <a title="Martinique" className={CarteStyle.trackable} href="/annonce/Martinique">
               <g id="martinique" className={`${CarteStyle._31AQE} ${CarteStyle._2HlCq}`}>
                 <path d="M237.8,612.9c0,0-9.8,10.8,1.8,18.6c5.7,3.8-1.6,8.2,5.5,14.8
               c7.1,6.6,14.6,10.2,12.1,16.6c-2.6,6.4-2.6,13.9,5.3,17.9c0,0-1.6-8.6,7.9-3.8c0,0,4.6-5.5,4.6,1.3
@@ -436,7 +441,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Guyane" className={CarteStyle.trackable} href="">
+            <a title="Guyane" className={CarteStyle.trackable} href="/annonce/Guyane">
               <g id="guyane" className={`${CarteStyle._31AQE} ${CarteStyle._2HlCq}`}>
                 <path d="M349.7,621.3c0,0,0.4,5.1-4.4,7.9c-4.8,2.7-6.9,9.9-5.8,13.3c1.1,3.5,2.4,4.6,2.2,8.8
               c-0.2,4.2,11.2,10,9.9,13.1c-1.3,3.1-2.7,1.5-4,6c-1.3,4.6-2,10.2-5.9,12.8
@@ -446,7 +451,7 @@ export default function Carte() {
                 </path>
               </g>
             </a>
-            <a title="Réunion" className={CarteStyle.trackable} href="">
+            <a title="Réunion" className={CarteStyle.trackable} href="/annonce/Reunion">
               <g id="reunion" className={`${CarteStyle._31AQE} ${CarteStyle._2HlCq}`} data-reactid="224">
                 <path d="M437.1,648.7c0,0-7.3,1.1,0,9.7c7.3,8.6,2.7,11.7,6,15.5c3.3,3.8,9,2.9,13.5,6.4
               c4.6,3.5,15.1,10.6,27.4,7.3c2.7-0.7,13,1.6,12.4-4c-0.5-5.7,1.3-13.1,2.4-15
