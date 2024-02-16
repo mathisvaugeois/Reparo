@@ -10,8 +10,7 @@ export default async function Admin() {
     if (session?.user) {
         return (
         <>
-            <h2> Admin page - bon retour {session?.user.username} </h2>;
-            <Link href="/creation">Création d'annonce</Link>
+            <h2> Admin page - bon retour {session?.user.username} </h2>
             <h2>Client Session</h2>
             <User />
             <h2> Server Session </h2>
