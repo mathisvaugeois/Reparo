@@ -1,10 +1,11 @@
 'use client'
 import Annonce from '@/components/Annonce'
+import AnnonceBis from '@/components/AnnonceBis'
 import AnnonceStyles from '@/styles/components/annonce.module.css'
+import { useState, useEffect } from "react"
 
-export default function AnnoncePage({ params }: { params: { id: string } }){
-  // Utilisez l'ID pour récupérer les données spécifiques à cette annonce
-  // Vous pouvez appeler une API, interroger une base de données, etc.
+export default function AnnoncePage({ params }: { params: { id: string } }) {
+  const [annonces, setAnnonces] = useState<any[]>([]);
 
   // Exemple d'utilisation fictive de l'ID
   const annonceData = {
@@ -12,7 +13,7 @@ export default function AnnoncePage({ params }: { params: { id: string } }){
     content: `Contenu de l'annonce ${params.id}`,
   };
 
-  const searchAnnonces = async() => {
+  const searchAnnonces = async () => {
     // e.preventDefault();
     try {
       const region = params.id
@@ -23,6 +24,7 @@ export default function AnnoncePage({ params }: { params: { id: string } }){
         body: JSON.stringify({ region }),
       });
       const jsonResponse = await response.json();
+      setAnnonces(jsonResponse.annonces);
       console.log(jsonResponse.message)
       console.log(jsonResponse.annonces)
     } catch (err) {
@@ -30,14 +32,23 @@ export default function AnnoncePage({ params }: { params: { id: string } }){
     }
   }
 
-//Faire un for pour le nombres de lignes dans la bdd
-//et récupérer tous les ids a chaque fois 
-//les afficher dans annonce
+  useEffect(() => {
+    searchAnnonces(); // on pourra ajouter un effet de chargement plus tard
+  }, []);
+
+  //Faire un for pour le nombres de lignes dans la bdd
+  //et récupérer tous les ids a chaque fois 
+  //les afficher dans annonce
   return (
-    <div style={{ paddingTop: '75px',paddingLeft: '10px', marginBottom:'500px' }}>
+    <div style={{ paddingTop: '75px', paddingLeft: '10px', marginBottom: '500px' }}>
       <div className={AnnonceStyles.annonce}>
         <div className={AnnonceStyles.title}>{annonceData.title}</div>
         <button onClick={searchAnnonces}>Search Annonces</button>
+        {annonces?.length > 0 && (
+          <>{annonces.map((annonce) => ( // Map over each result and render it as an AnnounceBis component
+            <AnnonceBis key={annonce._id || Math.random()} title={annonce.title} description={annonce.content} metier={annonce.metier} ville={annonce.region} prix={annonce.price} />
+          ))}</>
+        )}
         <Annonce />
         <Annonce />
         <Annonce />
@@ -47,6 +58,6 @@ export default function AnnoncePage({ params }: { params: { id: string } }){
     </div>
   );
 };
-//Remplacer par div title 
-      //<h1>{annonceData.title}</h1>
-      //<p>{annonceData.content}</p>
+//Remplacer par div title
+//<h1>{annonceData.title}</h1>
+//<p>{annonceData.content}</p>

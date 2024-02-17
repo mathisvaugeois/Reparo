@@ -10,9 +10,15 @@ export async function POST(req) {
         const { region } = body;
         console.log("REGION = ", region)
 
-        const annonces = await db.Annonce.findMany({
-            where: { region: region }
-        });
+        let annonces;
+        if (region === "France") {
+            annonces = await db.Annonce.findMany({});
+        } else {
+            annonces = await db.Annonce.findMany({
+                where: { region: region }
+            });
+        }
+        
 
         return NextResponse.json({ annonces: annonces, message: "Annonce bien rendue" }, { status: 201 });
     } catch {
