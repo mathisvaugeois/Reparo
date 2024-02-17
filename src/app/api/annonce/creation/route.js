@@ -22,7 +22,6 @@ export async function POST(req) {
         })
         const {...rest } = newAnnonce
 
-
         return NextResponse.json({ annonce: rest, message: "L'annonce a bien été créé" }, { status: 201 });
     } catch (error) {
         return NextResponse.json({ message: error }) //"Something went wrong."
