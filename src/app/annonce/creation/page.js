@@ -1,16 +1,14 @@
 'use client'
-import { authOptions } from "@/lib/auth"
-import { getServerSession } from "next-auth"
 import { useState } from "react"
+import { useSession } from "next-auth/react";
 
-export default async function CreateAnnonce() {
-    const session = await getServerSession(authOptions);
+export default function CreateAnnonce() {
+    const { data: session } = useSession();
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
     const [imgUrl, setImage] = useState('')
     const [region, setRegion] = useState('')
     const [price, setPrice] = useState(0)
-    const published = false
     const authorId = session?.user.id;
     const [errorMessage, setErrorMessage] = useState("");
     const [validationMessage, setValidationMessage] = useState("");
@@ -35,7 +33,7 @@ export default async function CreateAnnonce() {
             const response = await fetch('http://localhost:3000/api/annonce/creation', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ title, content, published, authorId, imgUrl, region, price}),
+                body: JSON.stringify({ title, content, authorId, imgUrl, region, price}),
             });
             const responseData = await response.json();
             if (response.status === 409) {
@@ -143,7 +141,7 @@ export default async function CreateAnnonce() {
                         </div>
                         <p className="mt-2 text-red-600 text-center">{errorMessage}</p>
                         <div>
-                            <button type="submit" className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+                            <button type="submit" className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
                         </div>
                         <p className="mt-2 text-green-600 text-center">{validationMessage}</p>
                     </form>

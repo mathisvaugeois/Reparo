@@ -7,14 +7,14 @@ const prisma = new PrismaClient()
 export async function POST(req) {
     try {
         const body = await req.json();
-        const { title, content, published, authorId, imgUrl, region, price} = body;
+        const { title, content, authorId, imgUrl, region, price} = body;
 
         const newAnnonce = await db.annonce.create({
             data: {
                 title,
                 content,
-                published,
-                authorId,
+                published : true,
+                author: { connect: { id: authorId } },
                 imgUrl,
                 region, 
                 price
