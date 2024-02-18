@@ -8,8 +8,7 @@ export default function CreateAnnonce() {
     const [content, setContent] = useState('')
     const [imgUrl, setImage] = useState('')
     const [region, setRegion] = useState('')
-    const [price, setPrice] = useState(0)
-    const authorId = session?.user.id;
+    const [price, setPrice] = useState('')
     const [errorMessage, setErrorMessage] = useState("");
     const [validationMessage, setValidationMessage] = useState("");
 
@@ -30,10 +29,10 @@ export default function CreateAnnonce() {
         }
         
         try{
-            const response = await fetch('http://localhost:3000/api/annonce/creation', {
+            const response = await fetch('http://localhost:3000/api/annonces/creation', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ title, content, authorId, imgUrl, region, price}),
+                body: JSON.stringify({ title, content, imgUrl, region, price}),
             });
             const responseData = await response.json();
             if (response.status === 409) {
@@ -46,7 +45,7 @@ export default function CreateAnnonce() {
                 setContent('');
                 setImage('');
                 setRegion('');
-                setPrice(0);
+                setPrice('');
                 setValidationMessage(responseData.message);
                 return;
             }
@@ -132,7 +131,7 @@ export default function CreateAnnonce() {
                                 <input
                                     id="price"
                                     name="price"
-                                    type="number"
+                                    type="text"
                                     value={price}
                                     onChange={(e) => setPrice(e.target.value)}
                                     required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
