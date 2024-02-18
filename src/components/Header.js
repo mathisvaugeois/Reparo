@@ -24,6 +24,7 @@ export default async function Header(){
               <li><Link href="/annonce/France">Annonce</Link></li>
               <li><Link href="/contact">À propos de nous</Link></li>
               <li style={{float:'right'}}><Link href="/admin">admin</Link></li>
+              <li style={{float:'right'}}><Link href="/annonce/creation">Création d'annonce</Link></li>
             
             <li style={{float:'right'}}>{session?.user ? (
               <SignOutButton/>
