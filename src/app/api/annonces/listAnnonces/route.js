@@ -1,14 +1,10 @@
 import { db } from "@/lib/db";
 import { NextResponse } from "next/server";
 
-const { PrismaClient } = require('@prisma/client')
-const prisma = new PrismaClient()
-
 export async function POST(req) {
     try {
         const body = await req.json();
         const { region } = body;
-        console.log("REGION = ", region)
 
         let annonces;
         if (region === "France") {

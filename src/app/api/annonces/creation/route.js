@@ -3,9 +3,6 @@ import { authOptions } from "@/lib/auth"
 import { getServerSession } from "next-auth"
 import { NextResponse } from "next/server";
 
-const { PrismaClient } = require('@prisma/client')
-const prisma = new PrismaClient()
-
 export async function POST(req) {
     try {
         const session = await getServerSession(authOptions);
@@ -29,6 +26,6 @@ export async function POST(req) {
 
         return NextResponse.json({ annonce: rest, message: "L'annonce a bien été créé" }, { status: 201 });
     } catch (error) {
-        return NextResponse.json({ message: error + 'T'}) //"Something went wrong."
+        return NextResponse.json({ message: error})
     }
 }

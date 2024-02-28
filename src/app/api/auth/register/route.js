@@ -2,9 +2,6 @@ import { db } from "@/lib/db";
 import { hash } from "bcrypt";
 import { NextResponse } from "next/server";
 
-const { PrismaClient } = require('@prisma/client')
-const prisma = new PrismaClient()
-
 export async function POST(req) {
     try {
         const body = await req.json();
@@ -39,6 +36,6 @@ export async function POST(req) {
 
         return NextResponse.json({ user: rest, message: "Le profil a bien été créé" }, { status: 201 });
     } catch (error) {
-        return NextResponse.json({ message: error }) //"Something went wrong."
+        return NextResponse.json({ message: error })
     }
 }
