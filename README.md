@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+## Titre du projet : Reparo
+Description : Reparo est un site d’annonce spécialisé dans la réparation. Ce site regroupe les personnes afin de réparer les objets de chacun. 
+Rien ne dure éternellement, les objets cassent, s'abîment ou arrêtent juste de fonctionner. Mais grâce à Reparo on peut les réparer.
+Notre objectif: proposer une plateforme simple d’utilisation, que ce soit pour le client ou le réparateur. Le client dépose une annonce avec un titre, une description, une photo, la région ainsi que le prix qu’il veut donner. Une personne voulant proposer ses services (professionnel ou non) peut proposer ses services à ce client. Le client peut ensuite choisir entre toutes les personnes qui l'ont contacté. Une fois choisis, ils peuvent échanger pour donner plus de détails, négocier le prix.
+
+Membres : 
+BACK :
+Enzo PIERRE : Mise en place du projet et gestion des api
+Mathis VAUGEOIS : Dashboard et création de l’annonce 
+FRONT :
+Eli DESTOMBES : Page d’accueil et header et footer
+Oriane FORESTIER : Page avec l’ensemble des annonces et page d’annonce
+
+Technologies : Next.js React Sqlite
+
+Bugs connus : 
+ - temps pour charger un page ou les annonces trop long
+ - Page “a propos de nous” pas adapté
+
+Fonctionnalités manquantes:
+ - Il n’y a pas de messagerie entre différents utilisateurs
+ - Upload d’image ne fonctionne pas encore
+
 
 ## Getting Started
 
