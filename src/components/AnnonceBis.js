@@ -2,13 +2,12 @@ import AnnonceStyles from '../styles/components/annonce.module.css'
 
 import Link from 'next/link'
 
-export default function AnnonceBis({ id, title, description, metier, ville, prix }){
+export default function AnnonceBis({ id, title, description, metier, ville, prix, imageUrl}){
 
-  console.log("id = ", id)
   return(
     <div>
       <Link href={`/annonce/detail/${id}`} className={AnnonceStyles.roundedRectangle}>
-        <div className={AnnonceStyles.imageCarre} id="img"><img src="/pas_photo.png"/></div>
+        <div className={AnnonceStyles.imageCarre} id="img"><img src={imageUrl}/></div>
         <div className={AnnonceStyles.content}>
           <div className={AnnonceStyles.titreAnnonce} id="titre"> {title} </div>
           <div className={AnnonceStyles.description} id="desc"> {description} </div>

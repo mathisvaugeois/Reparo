@@ -1,29 +1,31 @@
 .container {
-    display: flex;
-    gap : 20px;
-    
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aliceblue;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 1%;
-  }
-  .center{
-    background-color:  #172554;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
+  display: flex;
+  gap: 20px;
 
-  .column {
-    flex: 1;   
-    padding: 20px;
-    text-align: center;
-    
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aliceblue;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1%;
 }
+
+.center {
+  background-color: #172554;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+
+}
+
 .titre {
   text-decoration: underline;
 }

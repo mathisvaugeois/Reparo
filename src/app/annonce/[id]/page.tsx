@@ -9,7 +9,7 @@ export default function AnnoncePage({ params }: { params: { id: string } }) {
 
   // Exemple d'utilisation fictive de l'ID
   const annonceData = {
-    title: `Annonce trouvé dans ${params.id}`,
+    title: `Annonces trouvées en ${params.id}`,
     content: `Contenu de l'annonce ${params.id}`,
   };
 
@@ -17,7 +17,6 @@ export default function AnnoncePage({ params }: { params: { id: string } }) {
     // e.preventDefault();
     try {
       const region = params.id
-      console.log(region)
       const response = await fetch(`http://localhost:3000/api/annonces/listAnnonces`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -38,10 +37,17 @@ export default function AnnoncePage({ params }: { params: { id: string } }) {
     <div style={{ paddingTop: '75px', paddingLeft: '10px', marginBottom: '500px' }}>
       <div className={AnnonceStyles.annonce}>
         <div className={AnnonceStyles.title}>{annonceData.title}</div>
-        <button onClick={searchAnnonces}>Search Annonces</button>
         {annonces?.length > 0 && (
           <>{annonces.map((annonce) => ( // Map over each result and render it as an AnnounceBis component
-            <AnnonceBis key={annonce.id} id={annonce.id} title={annonce.title} description={annonce.content} metier={annonce.metier} ville={annonce.region} prix={annonce.price} />
+            <AnnonceBis
+              key={annonce.id}
+              id={annonce.id}
+              title={annonce.title}
+              description={annonce.content}
+              metier={annonce.metier}
+              ville={annonce.region}
+              prix={annonce.price}
+              imageUrl={annonce.imageUrl}/>
           ))}</>
         )}
         <Annonce />

@@ -16,7 +16,6 @@ export default function Detail({ params }: { params: { id: string } }) {
     // e.preventDefault();
     try {
       const id = params.id
-      console.log(id)
       const response = await fetch(`http://localhost:3000/api/annonces/detail`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -24,7 +23,6 @@ export default function Detail({ params }: { params: { id: string } }) {
       });
       const jsonResponse = await response.json();
       setAnnonce(jsonResponse.annonce);
-      console.log(jsonResponse.message, jsonResponse.annonce)
     } catch (err) {
       console.error("Failed to fetch announcements:", err);
     }
@@ -37,7 +35,7 @@ export default function Detail({ params }: { params: { id: string } }) {
   if (annonce && annonce.id != undefined && annonce.title) {
     return (
       <div className={PageAnnonceStyles.annonce}>
-        <div className={PageAnnonceStyles.imageRectangle} id="img"><img src="/chaise.jpg" /></div>
+        <div className={PageAnnonceStyles.imageRectangle} id="img"><img src={annonce.imageUrl}/></div>
         <div className={PageAnnonceStyles.titreAnnonce} id="titre"> {annonce.title} </div>
         <div className={PageAnnonceStyles.autre} id="metier"> {annonce.metier} </div>
         <div className={PageAnnonceStyles.otherInfo}>
