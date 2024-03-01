@@ -35,27 +35,24 @@ export default function AnnoncePage({ params }: { params: { id: string } }) {
 
   return (
     <div style={{ paddingTop: '75px', paddingLeft: '10px', marginBottom: '500px' }}>
-      <div className={AnnonceStyles.annonce}>
-        <div className={AnnonceStyles.title}>{annonceData.title}</div>
-        {annonces?.length > 0 && (
-          <>{annonces.map((annonce) => ( // Map over each result and render it as an AnnounceBis component
-            <AnnonceBis
-              key={annonce.id}
-              id={annonce.id}
-              title={annonce.title}
-              description={annonce.content}
-              metier={annonce.metier}
-              ville={annonce.region}
-              prix={annonce.price}
-              imageUrl={annonce.imageUrl}/>
-          ))}</>
-        )}
-        <Annonce />
-        <Annonce />
-        <Annonce />
-        <Annonce />
-        <div className={AnnonceStyles.marche}></div>
-      </div>
+      <div className={AnnonceStyles.title}>{annonceData.title}</div>
+      {annonces?.length > 0 && (
+        <>{annonces.map((annonce) => ( // Map over each result and render it as an AnnounceBis component
+          <AnnonceBis
+            key={annonce.id}
+            id={annonce.id}
+            title={annonce.title}
+            description={annonce.content}
+            metier={annonce.metier}
+            ville={annonce.region}
+            prix={annonce.price}
+            imageUrl={annonce.imageUrl} />
+        ))}</>
+      )}
+      <Annonce />
+      <Annonce />
+      <Annonce />
+      <Annonce />
     </div>
   );
 };

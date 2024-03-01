@@ -1,10 +1,10 @@
 import User from "@/components/User";
 import { authOptions } from "@/lib/auth"
 import { getServerSession } from "next-auth"
-import '@/styles/bootstrap.css';
-import '@/styles/Chart.min.css';
-import '@/styles/perfect-scrollbar.css';
-import '@/styles/app.css';
+// import '@/styles/bootstrap.css';
+// import '@/styles/Chart.min.css';
+// import '@/styles/perfect-scrollbar.css';
+// import '@/styles/app.css';
 
 export default async function Admin() {
     const session = await getServerSession(authOptions);
@@ -14,7 +14,7 @@ export default async function Admin() {
         <>
             <div id="app" bgcolor="#000000">
                 <div id="main">
-                <script src="../js/feather.min.js"></script>
+                {/* <script src="../js/feather.min.js"></script>
                 <script src="../js/perfect-scrollbar.min.js"></script>
                 <script src="../js/app.js"></script>
                 <script src="../js/Chart.min.js"></script>
@@ -255,7 +255,7 @@ export default async function Admin() {
                                 </div>
                             </div>
                         </section>
-                    </div>
+                    </div> */}
                     <h2>Client Session</h2>
                     <User />
                     <h2> Server Session </h2>

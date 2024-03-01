@@ -172,6 +172,10 @@ export default function CreateAnnonce() {
                                     <option value="Pays de la Loire">Pays de la Loire</option>
                                     <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
                                     <option value="Région Grand Est">Région Grand Est</option>
+                                    <option value="Région Guadeloupe">Région Guadeloupe</option>
+                                    <option value="Région Martinique">Région Martinique</option>
+                                    <option value="Région Guyane">Région Guyane</option>
+                                    <option value="Région Rénion">Région Réunion</option>
                                 </select>
                             </div>
                         </div>

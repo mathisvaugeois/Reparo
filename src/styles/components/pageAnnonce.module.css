@@ -1,90 +1,95 @@
-.annonce{
-  position: absolute;
-  top : 100px;
+.annonce {
+  margin-left: 50%;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 800px;
 }
-  .marche{
-    margin-bottom : 350px;
-  }
-  .imageRectangle {
-    width: 800px; /* Ajustez la largeur selon vos besoins */
-    height: 450px; /* Ajustez la hauteur selon vos besoins */
-    border-radius: 10px; /* Ajustez le rayon de bordure pour arrondir les coins */
-    background-color: lightcoral; /* Couleur de fond du rectangle */
-    border: 2px solid rgb(236, 111, 111);
-    opacity: 0.9;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    overflow: hidden;
-  }
 
-  .imageRectangle img {
-    width: auto;
-    max-height: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 10px; /* Ajustez le rayon de bordure pour arrondir les coins */
-  }
+.imageRectangle {
+  width: 800px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: lightcoral;
+  border: 2px solid rgb(236, 111, 111);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
 
-  .titreAnnonce {
-    margin-left: 3px;
-    margin-top : 1.5px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: left;
-    font-size: 28px;
-  }
+.imageRectangle img {
+  width: auto;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
 
-  .description {
-    margin-left: 3px;
-    margin-top : 20px;
-    text-align: left;
-    font-size: 22px;
-    text-align: justify;
-  }
+.titreAnnonce {
+  margin-left: 3px;
+  margin-top: 1.5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 28px;
+}
 
-  .autre {
-    margin-left: 3px;
-    margin-top : 1.5px;
-    text-align: left;
-    font-size: 20px;
-  }
+.description {
+  margin-left: 3px;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 22px;
+  text-align: justify;
+}
 
-  .otherInfo {
-    display: flex;
-    justify-content: space-between;
-  }
+.autre {
+  margin-left: 3px;
+  margin-top: 1.5px;
+  text-align: left;
+  font-size: 20px;
+}
 
-  /*lightcoral
+.otherInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*lightcoral
   fill: #1da5e4;
   stroke: #172554;
   */
-  .button{
-    display: flex;
-    justify-content: flex-end;
-  }
-  .service{
-    width: 160px; /* Ajustez la largeur selon vos besoins */
-    height: 90px; /* Ajustez la hauteur selon vos besoins */
-    border-radius: 10px; /* Ajustez le rayon de bordure pour arrondir les coins */
-    background-color: #1E5388; /* Couleur de fond du rectangle */
-    border: 2px solid #172554;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 22px;
-    color: #fffcff;
-  }
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  .service:hover{
-    width: 170px; /* Ajustez la largeur selon vos besoins */
-    height: 95px; /* Ajustez la hauteur selon vos besoins */
-    font-size: 23px;
-    background-color: #3278be;
-  }
+.service {
+  width: 160px;
+  /* Ajustez la largeur selon vos besoins */
+  height: 90px;
+  /* Ajustez la hauteur selon vos besoins */
+  border-radius: 10px;
+  /* Ajustez le rayon de bordure pour arrondir les coins */
+  background-color: #1E5388;
+  /* Couleur de fond du rectangle */
+  border: 2px solid #172554;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 22px;
+  color: #fffcff;
+}
+
+.service:hover {
+  width: 170px;
+  /* Ajustez la largeur selon vos besoins */
+  height: 95px;
+  /* Ajustez la hauteur selon vos besoins */
+  font-size: 23px;
+  background-color: #3278be;
+}

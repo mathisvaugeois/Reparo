@@ -35,7 +35,7 @@ export default function Detail({ params }: { params: { id: string } }) {
   if (annonce && annonce.id != undefined && annonce.title) {
     return (
       <div className={PageAnnonceStyles.annonce}>
-        <div className={PageAnnonceStyles.imageRectangle} id="img"><img src={annonce.imageUrl}/></div>
+        <div className={PageAnnonceStyles.imageRectangle} id="img"><img src={annonce.imageUrl} /></div>
         <div className={PageAnnonceStyles.titreAnnonce} id="titre"> {annonce.title} </div>
         <div className={PageAnnonceStyles.autre} id="metier"> {annonce.metier} </div>
         <div className={PageAnnonceStyles.otherInfo}>
@@ -46,7 +46,6 @@ export default function Detail({ params }: { params: { id: string } }) {
         <div className={PageAnnonceStyles.button}>
           <Link href="/annonce/der" className={PageAnnonceStyles.service}>Proposer ses services</Link>
         </div>
-        <div className={PageAnnonceStyles.marche}></div>
       </div>
     );
   } else {
