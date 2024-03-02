@@ -206,7 +206,7 @@ export default async function Admin() {
                                                     <td class='col-3'>ReactJS</td>
                                                     <td class='col-6'>
                                                         <div class="progress progress-success">
-                                                            <div class="progress-bar" role="progressbar" style={{width: "35%"}}
+                                                            <div class="progress-bar" role="progressbar" style={{width: "70%"}}
                                                                 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
@@ -216,7 +216,7 @@ export default async function Admin() {
                                                     <td class='col-3'>Prisma</td>
                                                     <td class='col-6'>
                                                         <div class="progress progress-danger">
-                                                            <div class="progress-bar" role="progressbar" style={{width: "50%"}}
+                                                            <div class="progress-bar" role="progressbar" style={{width: "100%"}}
                                                                 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
